@@ -1,9 +1,32 @@
-import { Controller } from '@nestjs/common';
+import {
+  Controller,
+  Post,
+  UploadedFile,
+  UseInterceptors,
+} from '@nestjs/common';
 import { Client, ClientKafka, Transport } from '@nestjs/microservices';
+import { FileInterceptor } from '@nestjs/platform-express';
+import { lastValueFrom } from 'rxjs';
 
 @Controller()
 export class VoiceProcessorController {
   constructor() {}
+
+  @Post('upload-voice')
+  @UseInterceptors(FileInterceptor('file'))
+  async uploadVoice(
+    @UploadedFile() file: Express.Multer.File,
+  ): Promise<boolean> {
+    try {
+      const result = await lastValueFrom(
+        this.client.send('add-voice', file.buffer),
+      );
+      return result;
+    } catch (error) {
+      console.error('Error sending voice file:', error);
+      return false;
+    }
+  }
 
   @Client({
     transport: Transport.KAFKA,
