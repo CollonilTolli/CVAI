@@ -1,0 +1,24 @@
+{
+  "name": "cvai",
+  "packageManager": "yarn@4.2.2",
+  "scripts": {
+    "cvai:back": "concurrently \"yarn workspace nest-backend start:dev\" \"yarn workspaces foreach -v --all --include 'microservises/*' run start:dev\"",
+    "cvai:front": "concurrently \"yarn workspace cvai-frontend dev\" \"yarn workspaces foreach -v --all --include 'microfrontends/*' run dev\"",
+    "lint": "yarn dlx eslint . ",
+    "lint:fix": "yarn dlx eslint . --fix"
+  },
+  "workspaces": [
+    "frontend",
+    "microfrontends/*",
+    "backend",
+    "microservises/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0"
+  }
+}
