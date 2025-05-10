@@ -1064,6 +1064,72 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@module-federation/nextjs-mf@npm:^6.0.4":
+  version: 6.7.1
+  resolution: "@module-federation/nextjs-mf@npm:6.7.1"
+  dependencies:
+    "@module-federation/node": "npm:0.16.2"
+    "@module-federation/utilities": "npm:1.9.1"
+    encoding: "npm:0.1.13"
+    eventemitter3: "npm:^5.0.0"
+    fast-glob: "npm:^3.2.11"
+    node-fetch: "npm:2.6.9"
+    webpack-sources: "npm:^3.2.3"
+  peerDependencies:
+    next: ^12 || ^13
+    react: ^17 || ^18
+    react-dom: ^17 || ^18
+    styled-jsx: "*"
+    webpack: ^5.40.0
+  peerDependenciesMeta:
+    styled-jsx:
+      optional: true
+  checksum: 10c0/1c98d615a356b4ab9f342897f3be5b9deae6e3b5d24e964baf18af70540cf918459f7d474cbd00f8a646646f79121e45ba1d5bba36a00db77fe724668d0ad80b
+  languageName: node
+  linkType: hard
+
+"@module-federation/node@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@module-federation/node@npm:0.16.2"
+  dependencies:
+    "@module-federation/utilities": "npm:1.9.1"
+    encoding: "npm:^0.1.13"
+    node-fetch: "npm:^2.6.7"
+  peerDependencies:
+    next: ^12||^13
+    react: ^16||^17||^18
+    react-dom: ^16||^17||^18
+    webpack: ^5.40.0
+  peerDependenciesMeta:
+    next:
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/c7b52ecc7fb14496696e196f5dcaff7ce5da9e3b8a7aad41ea56cd9006e0514f4da7c73a2b694d6b239db6075fd964e3962ea185803870b23b3ae82aaee99882
+  languageName: node
+  linkType: hard
+
+"@module-federation/utilities@npm:1.9.1":
+  version: 1.9.1
+  resolution: "@module-federation/utilities@npm:1.9.1"
+  peerDependencies:
+    next: ^12 || ^13
+    react: ^16 || ^17 || ^18
+    react-dom: ^16 || ^17 || ^18
+    webpack: ^5.40.0
+  peerDependenciesMeta:
+    next:
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/8bdd1e30e6a85df66e869e9c03e8b3d5e6c26ff3065f848012fb63c309ce1c8e66d7a157d4c9a495bf9432742434fe54d664e0dfd58ebdc5a8ef8503b8f9e9a5
+  languageName: node
+  linkType: hard
+
 "@nestjs/cli@npm:^10.0.0":
   version: 10.4.9
   resolution: "@nestjs/cli@npm:10.4.9"
@@ -1310,7 +1376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:15.3.2":
+"@next/env@npm:15.3.2, @next/env@npm:^15.3.2":
   version: 15.3.2
   resolution: "@next/env@npm:15.3.2"
   checksum: 10c0/bebc8acbe2fdaadc8cc9ae6dbf4fe1a2e183e1bc417742213ae6d246f8be9416b2af8e703e2faa1792c167245ea1918547c62cf7be88c35429f3494e71e4b429
@@ -1532,6 +1598,15 @@ __metadata:
   dependencies:
     tslib: "npm:^2.8.0"
   checksum: 10c0/33002f74f6f885f04c132960835fdfc474186983ea567606db62e86acd0680ca82f34647e8e610f4e1e422d1c16fce729dde22cd3b797ab1fd9061a825dabca4
+  languageName: node
+  linkType: hard
+
+"@swc/helpers@npm:^0.5.17":
+  version: 0.5.17
+  resolution: "@swc/helpers@npm:0.5.17"
+  dependencies:
+    tslib: "npm:^2.8.0"
+  checksum: 10c0/fe1f33ebb968558c5a0c595e54f2e479e4609bff844f9ca9a2d1ffd8dd8504c26f862a11b031f48f75c95b0381c2966c3dd156e25942f90089badd24341e7dbb
   languageName: node
   linkType: hard
 
@@ -2481,9 +2556,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"auth-service@workspace:microservises/auth-service":
+"auth-service@workspace:microservices/auth-service":
   version: 0.0.0-use.local
-  resolution: "auth-service@workspace:microservises/auth-service"
+  resolution: "auth-service@workspace:microservices/auth-service"
   dependencies:
     "@nestjs/cli": "npm:^10.0.0"
     "@nestjs/common": "npm:^10.0.0"
@@ -2609,6 +2684,50 @@ __metadata:
   checksum: 10c0/ec5fd0276b5630b05f0c14bb97cc3815c6b31600c683ebb51372e54dcb776cff790bdeeabd5b8d01ede375a040337ccbf6a3ccd68d3a34219125945e167ad943
   languageName: node
   linkType: hard
+
+"backend@workspace:backend":
+  version: 0.0.0-use.local
+  resolution: "backend@workspace:backend"
+  dependencies:
+    "@nestjs/cli": "npm:^10.0.0"
+    "@nestjs/common": "npm:^10.0.0"
+    "@nestjs/config": "npm:^4.0.1"
+    "@nestjs/core": "npm:^10.0.0"
+    "@nestjs/jwt": "npm:^11.0.0"
+    "@nestjs/mapped-types": "npm:*"
+    "@nestjs/microservices": "npm:^10.4.15"
+    "@nestjs/passport": "npm:^11.0.5"
+    "@nestjs/platform-express": "npm:^10.0.0"
+    "@nestjs/schematics": "npm:^10.0.0"
+    "@nestjs/testing": "npm:^10.0.0"
+    "@nestjs/typeorm": "npm:^11.0.0"
+    "@types/express": "npm:^5.0.0"
+    "@types/jest": "npm:^29.5.2"
+    "@types/multer": "npm:^1.4.12"
+    "@types/node": "npm:^20.3.1"
+    "@types/supertest": "npm:^6.0.0"
+    "@typescript-eslint/eslint-plugin": "npm:^8.0.0"
+    "@typescript-eslint/parser": "npm:^8.0.0"
+    eslint: "npm:^8.0.0"
+    eslint-config-prettier: "npm:^9.0.0"
+    eslint-plugin-prettier: "npm:^5.0.0"
+    jest: "npm:^29.5.0"
+    kafkajs: "npm:^2.2.4"
+    passport: "npm:^0.7.0"
+    passport-jwt: "npm:^4.0.1"
+    prettier: "npm:^3.0.0"
+    reflect-metadata: "npm:^0.2.0"
+    rxjs: "npm:^7.8.1"
+    source-map-support: "npm:^0.5.21"
+    supertest: "npm:^7.0.0"
+    ts-jest: "npm:^29.1.0"
+    ts-loader: "npm:^9.4.3"
+    ts-node: "npm:^10.9.1"
+    tsconfig-paths: "npm:^4.2.0"
+    typeorm: "npm:^0.3.21"
+    typescript: "npm:^5.1.3"
+  languageName: unknown
+  linkType: soft
 
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
@@ -3275,25 +3394,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cvai-frontend@workspace:frontend":
-  version: 0.0.0-use.local
-  resolution: "cvai-frontend@workspace:frontend"
-  dependencies:
-    "@types/node": "npm:^20"
-    "@types/react": "npm:^19"
-    "@types/react-dom": "npm:^19"
-    next: "npm:15.3.2"
-    react: "npm:^19.0.0"
-    react-dom: "npm:^19.0.0"
-    typescript: "npm:^5"
-    zustand: "npm:^5.0.4"
-  languageName: unknown
-  linkType: soft
-
 "cvai@workspace:.":
   version: 0.0.0-use.local
   resolution: "cvai@workspace:."
   dependencies:
+    "@next/env": "npm:^15.3.2"
     concurrently: "npm:^8.2.2"
     eslint: "npm:^8.0.0"
     eslint-config-prettier: "npm:^9.0.0"
@@ -3563,7 +3668,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"encoding@npm:^0.1.13":
+"encoding@npm:0.1.13, encoding@npm:^0.1.13":
   version: 0.1.13
   resolution: "encoding@npm:0.1.13"
   dependencies:
@@ -3862,6 +3967,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eventemitter3@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "eventemitter3@npm:5.0.1"
+  checksum: 10c0/4ba5c00c506e6c786b4d6262cfbce90ddc14c10d4667e5c83ae993c9de88aa856033994dd2b35b83e8dc1170e224e66a319fa80adc4c32adcd2379bbc75da814
+  languageName: node
+  linkType: hard
+
 "events@npm:^3.2.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
@@ -3977,7 +4089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.3.2":
+"fast-glob@npm:^3.2.11, fast-glob@npm:^3.3.2":
   version: 3.3.3
   resolution: "fast-glob@npm:3.3.3"
   dependencies:
@@ -4225,6 +4337,24 @@ __metadata:
   checksum: 10c0/c6d27f3ed86cc5b601404822f31c900dd165ba63fff8152a3ef714e2012e7535027063bc67ded4cb5b3a49fa596495d46cacd9f47d6328459cf570f08b7d9e5a
   languageName: node
   linkType: hard
+
+"frontend@workspace:frontend":
+  version: 0.0.0-use.local
+  resolution: "frontend@workspace:frontend"
+  dependencies:
+    "@module-federation/nextjs-mf": "npm:^6.0.4"
+    "@next/env": "npm:^15.3.2"
+    "@swc/helpers": "npm:^0.5.17"
+    "@types/node": "npm:^20"
+    "@types/react": "npm:^19"
+    "@types/react-dom": "npm:^19"
+    next: "npm:15.3.2"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+    typescript: "npm:^5"
+    zustand: "npm:^5.0.4"
+  languageName: unknown
+  linkType: soft
 
 "fs-extra@npm:^10.0.0":
   version: 10.1.0
@@ -6040,50 +6170,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nest-backend@workspace:backend":
-  version: 0.0.0-use.local
-  resolution: "nest-backend@workspace:backend"
-  dependencies:
-    "@nestjs/cli": "npm:^10.0.0"
-    "@nestjs/common": "npm:^10.0.0"
-    "@nestjs/config": "npm:^4.0.1"
-    "@nestjs/core": "npm:^10.0.0"
-    "@nestjs/jwt": "npm:^11.0.0"
-    "@nestjs/mapped-types": "npm:*"
-    "@nestjs/microservices": "npm:^10.4.15"
-    "@nestjs/passport": "npm:^11.0.5"
-    "@nestjs/platform-express": "npm:^10.0.0"
-    "@nestjs/schematics": "npm:^10.0.0"
-    "@nestjs/testing": "npm:^10.0.0"
-    "@nestjs/typeorm": "npm:^11.0.0"
-    "@types/express": "npm:^5.0.0"
-    "@types/jest": "npm:^29.5.2"
-    "@types/multer": "npm:^1.4.12"
-    "@types/node": "npm:^20.3.1"
-    "@types/supertest": "npm:^6.0.0"
-    "@typescript-eslint/eslint-plugin": "npm:^8.0.0"
-    "@typescript-eslint/parser": "npm:^8.0.0"
-    eslint: "npm:^8.0.0"
-    eslint-config-prettier: "npm:^9.0.0"
-    eslint-plugin-prettier: "npm:^5.0.0"
-    jest: "npm:^29.5.0"
-    kafkajs: "npm:^2.2.4"
-    passport: "npm:^0.7.0"
-    passport-jwt: "npm:^4.0.1"
-    prettier: "npm:^3.0.0"
-    reflect-metadata: "npm:^0.2.0"
-    rxjs: "npm:^7.8.1"
-    source-map-support: "npm:^0.5.21"
-    supertest: "npm:^7.0.0"
-    ts-jest: "npm:^29.1.0"
-    ts-loader: "npm:^9.4.3"
-    ts-node: "npm:^10.9.1"
-    tsconfig-paths: "npm:^4.2.0"
-    typeorm: "npm:^0.3.21"
-    typescript: "npm:^5.1.3"
-  languageName: unknown
-  linkType: soft
-
 "next@npm:15.3.2":
   version: 15.3.2
   resolution: "next@npm:15.3.2"
@@ -6170,7 +6256,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.1":
+"node-fetch@npm:2.6.9":
+  version: 2.6.9
+  resolution: "node-fetch@npm:2.6.9"
+  dependencies:
+    whatwg-url: "npm:^5.0.0"
+  peerDependencies:
+    encoding: ^0.1.0
+  peerDependenciesMeta:
+    encoding:
+      optional: true
+  checksum: 10c0/7a4a0e027e509b741bec4172749103f158da23187ff251cb988dd54ea7267519c3fa11838971da0f5f3c54e79da3174e7bd72aa2179c9f69887511ece16c9c0f
+  languageName: node
+  linkType: hard
+
+"node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.7":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
@@ -7812,6 +7912,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "template@workspace:microfrontends/template"
   dependencies:
+    "@module-federation/nextjs-mf": "npm:^6.0.4"
+    "@next/env": "npm:^15.3.2"
+    "@swc/helpers": "npm:^0.5.17"
     "@types/node": "npm:^20"
     "@types/react": "npm:^19"
     "@types/react-dom": "npm:^19"
@@ -8405,9 +8508,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"voice-processor@workspace:microservises/voice-processor":
+"voice-processor@workspace:microservices/voice-processor":
   version: 0.0.0-use.local
-  resolution: "voice-processor@workspace:microservises/voice-processor"
+  resolution: "voice-processor@workspace:microservices/voice-processor"
   dependencies:
     "@nestjs/cli": "npm:^10.0.0"
     "@nestjs/common": "npm:^10.0.0"
