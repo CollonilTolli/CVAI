@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0" version="27.0.3" pages="5">
   <diagram name="legend" id="3296fmAq2qVaNqyxo0th">
-    <mxGraphModel dx="3687" dy="2070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="714" dy="401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -136,10 +136,13 @@
         <mxCell id="r3BdX6SV_N6JFlV4oTcX-66" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="1637.31" y="757.5" width="90" height="165" as="geometry" />
         </mxCell>
-        <mxCell id="r3BdX6SV_N6JFlV4oTcX-64" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#001DBC;rounded=1;align=center;arcSize=50;fontFamily=Helvetica;fontSize=12;labelBackgroundColor=none;resizable=1;fillColor=#0050ef;fixedWidth=0;resizeWidth=1;resizeHeight=1;fillStyle=solid;fontColor=#ffffff;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="r3BdX6SV_N6JFlV4oTcX-66">
+        <mxCell id="r3BdX6SV_N6JFlV4oTcX-67" value="" style="group" vertex="1" connectable="0" parent="r3BdX6SV_N6JFlV4oTcX-66">
+          <mxGeometry width="90" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="r3BdX6SV_N6JFlV4oTcX-64" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#006EAF;rounded=1;align=center;arcSize=50;fontFamily=Helvetica;fontSize=12;labelBackgroundColor=none;resizable=1;fillColor=#1ba1e2;fixedWidth=0;resizeWidth=1;resizeHeight=1;fillStyle=solid;fontColor=#ffffff;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="r3BdX6SV_N6JFlV4oTcX-67">
           <mxGeometry x="2.6900000000000546" width="84.62" height="165" as="geometry" />
         </mxCell>
-        <mxCell id="r3BdX6SV_N6JFlV4oTcX-65" value="&lt;div&gt;&lt;span style=&quot;color: rgb(21, 21, 21);&quot;&gt;React Native&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(21, 21, 21);&quot;&gt;(expo)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=#ffffff;labelBackgroundColor=none;" vertex="1" parent="r3BdX6SV_N6JFlV4oTcX-66">
+        <mxCell id="r3BdX6SV_N6JFlV4oTcX-65" value="&lt;div&gt;&lt;span style=&quot;color: rgb(21, 21, 21);&quot;&gt;React Native&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(21, 21, 21);&quot;&gt;(expo)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=#ffffff;labelBackgroundColor=none;" vertex="1" parent="r3BdX6SV_N6JFlV4oTcX-67">
           <mxGeometry y="62.5" width="90" height="40" as="geometry" />
         </mxCell>
       </root>
