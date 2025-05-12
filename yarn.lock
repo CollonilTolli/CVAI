@@ -3398,7 +3398,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cvai@workspace:."
   dependencies:
-    "@next/env": "npm:^15.3.2"
     concurrently: "npm:^8.2.2"
     eslint: "npm:^8.0.0"
     eslint-config-prettier: "npm:^9.0.0"
