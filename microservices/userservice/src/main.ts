@@ -1,29 +1,28 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
+import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   
-  // Настройка Kafka для взаимодействия с микросервисами
+  // Настройка микросервиса с Kafka
   app.connectMicroservice<MicroserviceOptions>({
     transport: Transport.KAFKA,
     options: {
       client: {
-        clientId: 'backend',
         brokers: ['localhost:9092'],
       },
       consumer: {
-        groupId: 'backend-consumer',
+        groupId: 'user-consumer',
       },
     },
   });
 
-  // Запуск микросервисов
+  // Запуск микросервиса
   await app.startAllMicroservices();
   
-  // Запуск HTTP сервера
-  await app.listen(process.env.PORT ?? 3000);
-  console.log(`Бэкенд запущен на порту ${process.env.PORT ?? 3000}`);
+  // Запуск HTTP сервера (опционально)
+  await app.listen(3001);
+  console.log('Микросервис пользователей запущен');
 }
 bootstrap();

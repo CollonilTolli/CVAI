@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { VoiceProcessorModule } from './voice-processor/voice-processor.module';
+import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [VoiceProcessorModule],
+  imports: [UserModule],
   controllers: [AppController],
   providers: [AppService],
 })
